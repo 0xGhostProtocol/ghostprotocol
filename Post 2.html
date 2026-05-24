@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Protocol | Mission Log 02</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Fade-in Animation so it loads smoothly */
+        .post-container {
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Post Header */
+        .post-header {
+            background-color: #0a0a0a;
+            border: 1px solid #00ff00;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+        }
+        .post-header h1 {
+            color: #00ff00;
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .post-meta {
+            color: #777;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .post-meta span { color: #fff; }
+
+        /* Topic Blocks (Hacker Module Style) */
+        .log-block {
+            background-color: #0a0a0a;
+            border-left: 4px solid #00ff00;
+            border-right: 1px solid #222;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .log-block:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.05);
+            border-right: 1px solid #004400;
+        }
+        
+        /* Hacker Badge on each block */
+        .log-block::before {
+            content: '[SYSTEM_LOG_EXTRACTED]';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #050505;
+            color: #00ff00;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border: 1px solid #00ff00;
+            letter-spacing: 1px;
+        }
+
+        .log-block h2 {
+            color: #fff;
+            margin-top: 0;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .log-block p {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .log-block ul {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .log-block li { margin-bottom: 10px; }
+        .log-block strong { color: #00ff00; }
+        
+        .intro-text {
+            text-align: center;
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+        <div class="logo">GHOST_PROTOCOL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Roadmap.html">My Roadmap</a></li>
+            <li><a href="tools.html">Free Tools</a></li>
+            <li><a href="posts.html" class="active">Latest Posts</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- POST CONTENT -->
+    <div class="post-container">
+        
+        <div class="post-header">
+            <h1>> Introduction to Ethical Hacking in Hindi: Types of Hackers & Hacker Teams!</h1>
+            <div class="post-meta">
+                <div>AUTHOR: <span>Prashant (Ghost)</span></div>
+                <div>DATE: <span>May 2026</span></div>
+                <div>STATUS: <span style="color:#00ff00;">DECRYPTED</span></div>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="intro-text">
+            <p>नमस्ते दोस्तों! मैं प्रशांत (Ghost) एक बार फिर हाज़िर हूँ 'Ghost Protocol' के एक नए चैप्टर के साथ। पिछली पोस्ट में मैंने आपको बताया था कि कैसे पॉलिटेक्निक (मैकेनिकल) में मिली असफलताओं के बाद मैंने कंप्यूटर की दुनिया में कदम रखा और साइबर सिक्योरिटी मेरा असली जुनून बन गया। आज हम उसी जुनून की पहली सीढ़ी चढ़ने वाले हैं。</p>
+            <p>जब भी हम 'हैकिंग' शब्द सुनते हैं, तो हमारे दिमाग में एक ऐसे इंसान की तस्वीर आती है जो डार्क रूम में बैठकर हुडी (Hoodie) पहने धड़ाधड़ कीबोर्ड चला रहा है और किसी का बैंक अकाउंट खाली कर रहा है। लेकिन असलियत इससे बहुत अलग है। आज मैं आपको बताऊंगा कि Ethical Hacking क्या होती है, हैकर्स कितने प्रकार के होते हैं, और कॉर्पोरेट दुनिया में हैकिंग की कौन-कौन सी टीमें काम करती हैं।</p>
+            <h3 style="color: #00ff00; margin-top: 20px;">> चलिए, सिस्टम को समझना शुरू करते हैं!</h3>
+        </div>
+
+       <!-- Block 1: Types of Hackers -->
+        <div class="log-block">
+            <h2>> 01. हैकर कितने प्रकार के होते हैं? (Types of Hackers)</h2>
+            <p>हैकिंग का सीधा सा मतलब है—किसी सिस्टम की कमियों (vulnerabilities) को ढूंढना। अब वो कमियां आप किस नीयत से ढूंढ रहे हैं, उस आधार पर हैकर्स को अलग-अलग 'हैट्स' (Hats) में बांटा गया है:</p>
+            
+            <!-- Main Intro Image (Jo tumne lagai hai) -->
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="interoduction.png" alt="Ethical Hacking Image" style="max-width: 100%; border: 1px solid #00ff00; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);">
+            </div>
+            
+            <!-- Black Hat Hacker (Image on RIGHT) -->
+            <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                <div style="flex: 1; min-width: 280px;">
+                    <strong style="color: #ff4444; font-size: 1.2rem;">1. Black Hat Hacker (बुरे लोग):</strong>
+                    <p style="margin-top: 10px; color: #ccc;">ये वो हैकर्स हैं जो फिल्मों में विलेन होते हैं। इनका मकसद सिस्टम को नुकसान पहुंचाना, डेटा चोरी करना या पैसों के लिए ब्लैकमेल करना होता है। ये बिना परमिशन के हैकिंग करते हैं जो कि गैर-कानूनी (Illegal) है। <em>(इन्हें कोडिंग की गहरी समझ होती है, वायरस/मैलवेयर बनाते हैं और नेटवर्क बायपास करने में मास्टर होते हैं।)</em></p>
+                </div>
+                <div style="flex-basis: 250px; text-align: center;">
+                    <img src="black hat hacker.png" alt="Black Hat Hacker" style="max-width: 100%; border: 1px solid #ff4444; border-radius: 5px; box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);">
+                </div>
+            </div>
+
+            <!-- White Hat Hacker (Image on LEFT) -->
+            <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                <div style="flex-basis: 250px; text-align: center;">
+                    <img src="white hat hacker.png" alt="White Hat Hacker" style="max-width: 100%; border: 1px solid #00ff00; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);">
+                </div>
+                <div style="flex: 1; min-width: 280px;">
+                    <strong style="color: #00ff00; font-size: 1.2rem;">2. White Hat Hacker (सिस्टम के रक्षक):</strong>
+                    <p style="margin-top: 10px; color: #ccc;">हम सब इसी कैटेगरी में आना चाहते हैं! व्हाइट हैट हैकर भी बिल्कुल ब्लैक हैट हैकर की तरह ही सिस्टम को हैक कर सकते हैं, लेकिन अंतर सिर्फ परमिशन का है। कंपनियां खुद इन्हें हायर करती हैं कि "भाई, हमारा सिस्टम हैक करके दिखाओ, ताकि हमें अपनी कमियां पता चलें।"</p>
+                    <ul style="margin-top: 10px; border-left: 2px solid #333; padding-left: 15px; list-style-type: square; color: #ccc;">
+                        <li><strong>नेटवर्किंग:</strong> (TCP/IP, OSI Model) - डेटा इंटरनेट पर कैसे ट्रैवल करता है।</li>
+                        <li><strong>ऑपरेटिंग सिस्टम:</strong> Linux (विशेष रूप से Kali Linux) और Windows की गहरी समझ।</li>
+                        <li><strong>टूल्स:</strong> Burp Suite, Nmap, Metasploit आदि चलाना।</li>
+                        <li><strong>प्रोग्रामिंग:</strong> Python, JavaScript, HTML, PHP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Baaki ke Hats (List ke andar) -->
+            <ul style="margin-top: 20px;">
+                <li style="margin-bottom: 15px;"><strong style="color: #888;">3. Grey Hat Hacker (बीच वाले):</strong> ये न तो पूरी तरह अच्छे होते हैं, न बुरे। ये बिना परमिशन के सिस्टम की कमियां ढूंढते हैं, लेकिन नुकसान पहुंचाने के लिए नहीं। कमी मिलने पर ये कंपनी को बता देते हैं और कभी-कभी उसके बदले 'Bounty' (इनाम) की मांग करते हैं।</li>
+                
+                <li style="margin-bottom: 15px;"><strong style="color: #ffaa00;">4. Script Kiddies (कॉपी-पेस्ट वाले):</strong> हमें यह बिल्कुल नहीं बनना है! ये वो लोग हैं जिन्हें कोडिंग या हैकिंग के पीछे का लॉजिक नहीं पता होता। ये बस इंटरनेट से दूसरों के बनाए हुए टूल्स डाउनलोड करते हैं और किसी का वाई-फाई या फेसबुक हैक करने की कोशिश करते हैं। इनमें खुद की कोई स्किल नहीं होती।</li>
+                
+                <li><strong style="color: #00ffaa;">5. Green Hat Hacker (सीखने वाले):</strong> ये हैकिंग की दुनिया के नए खिलाड़ी होते हैं, जिन्हें सीखने की बहुत भूख होती है। ये सवाल पूछते हैं, बेसिक्स क्लियर करते हैं और स्क्रिप्ट किडीज़ की तरह शॉर्टकट नहीं खोजते।</li>
+            </ul>
+        </div>
+
+       <!-- Block 2: Hacker Teams -->
+        <div class="log-block">
+            <h2>> 02. हैकिंग की टीमें (Types of Hacker Teams / Color Teams)</h2>
+            <p>जब आप साइबर सिक्योरिटी को एक करियर के रूप में देखते हैं, तो बड़ी कंपनियों में सिक्योरिटी का काम अलग-अलग टीमों में बंटा होता है:</p>
+            
+            <!-- Red vs Blue Team Image -->
+            <div style="text-align: center; margin: 30px 0;">
+                <img src="red teem vs blue teem.png" alt="Red vs Blue Team" style="max-width: 100%; border-left: 3px solid #ff4444; border-right: 3px solid #4488ff; border-radius: 5px; box-shadow: -10px 0 20px rgba(255, 68, 68, 0.1), 10px 0 20px rgba(68, 136, 255, 0.1);">
+            </div>
+
+            <ul>
+                <!-- Red, Blue, Purple team wali list yahan rahegi -->
+                <li><strong style="color: #ff4444; font-size: 1.2rem;">🔴 Red Team (हमलावर - The Attackers):</strong> रेड टीम का काम होता है एक असली 'ब्लैक हैट हैकर' की तरह सोचना और कंपनी के सिस्टम पर हमला करना। ये हर वो तरीका अपनाते हैं जिससे सिस्टम को तोड़ा जा सके (बिल्कुल परमिशन के साथ)। इनका मुख्य काम कंपनी के डिफेंस को टेस्ट करना होता है।</li>
+                
+                <li style="margin-top: 15px;"><strong style="color: #4488ff; font-size: 1.2rem;">🔵 Blue Team (रक्षक - The Defenders):</strong> अगर रेड टीम हमलावर है, तो ब्लू टीम शील्ड (Shield) है। ब्लू टीम का काम है रेड टीम (या असली हैकर्स) के हमलों को रोकना। ये लोग 24/7 नेटवर्क की निगरानी करते हैं, फायरवॉल सेट करते हैं, और अगर कोई हैकिंग की कोशिश हो रही हो, तो उसे ब्लॉक करते हैं।</li>
+                
+                <li style="margin-top: 15px;"><strong style="color: #aa44ff; font-size: 1.2rem;">🟣 Purple Team (पुल - The Bridge):</strong> यह कोई अलग से टीम नहीं है, बल्कि रेड और ब्लू टीम का कॉम्बिनेशन है। जब रेड टीम हमला करती है और ब्लू टीम रोकती है, तो पर्पल टीम का काम होता है दोनों के बीच तालमेल बैठाना ताकि कंपनी की ओवरऑल सिक्योरिटी मजबूत हो सके।</li>
+            </ul>
+        </div>
+
+        <!-- Block 3: My Path -->
+        <div class="log-block">
+            <h2>> 03. तो मैं (प्रशांत) किस कैटेगरी और टीम में आता हूँ?</h2>
+            <p>अगर मैं आज की बात करूँ, तो मैं एक <strong>Green Hat Hacker</strong> हूँ—यानी एक लर्नर, जो अभी एथिकल हैकिंग के बेसिक्स सीख रहा है और अपने 'Ghost Protocol' रोडमैप पर चल रहा है。</p>
+            <p>लेकिन मेरी मंज़िल क्या है? मुझे कमियां ढूंढना, सिस्टम्स को टेस्ट करना और Kali Linux या Burp Suite जैसे टूल्स के साथ काम करना सबसे ज्यादा अट्रैक्ट करता है। इसलिए, मेरा लक्ष्य <strong style="color: #ff4444;">Red Team (Offensive Security)</strong> में जाने का है। मैं एक ऐसा एथिकल हैकर (White Hat) बनना चाहता हूँ, जो कंपनियों के सिस्टम में मौजूद कमियों को हैकर्स से पहले ढूंढ निकाले।</p>
+        </div>
+
+        <!-- Block 4: Bonus Mindset -->
+        <div class="log-block" style="border-left-color: #ffbd2e;">
+            <h2 style="color: #ffbd2e;">> 04. 💡 BONUS_PROTOCOL // हैकिंग 20% टूल्स है और 80% माइंडसेट!</h2>
+            <p>एक चीज़ जो मैंने अब तक की जर्नी में सीखी है—टूल्स (जैसे Burp Suite या Nmap) तो कोई भी चलाना सीख सकता है, लेकिन असली हैकर वो है जो "आउट ऑफ द बॉक्स" सोचता है। अगर आपको साइबर सिक्योरिटी में आना है, तो आपके अंदर कूट-कूट कर <strong>'धैर्य' (Patience)</strong> होना चाहिए। कई बार एक छोटी सी कमी ढूंढने में हफ्तों लग जाते हैं। कभी हार न मानने वाला माइंडसेट ही आपको एक स्क्रिप्ट किडी से असली हैकर बनाता है।</p>
+        </div>
+
+        <!-- Outro -->
+        <div class="intro-text" style="margin-top: 40px;">
+            <p>आप लोग क्या सोचते हैं? आपको रेड टीम का काम ज्यादा रोमांचक लगा या ब्लू टीम का? कमेंट्स में ज़रूर बताना!</p>
+            <p>जल्द ही मिलते हैं 'Ghost Protocol' के अगले चैप्टर में, जहाँ हम बात करेंगे कुछ प्रैक्टिकल टूल्स और नेटवर्किंग के बेसिक्स के बारे में।</p>
+            <h2 style="color: #00ff00; text-shadow: 0 0 10px #00ff00; margin-top: 20px;">> तब तक के लिए—सीखते रहिए और सुरक्षित रहिए!</h2>
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div style="margin-top: 40px; text-align: center;">
+            <button class="follow-btn" style="background-color: transparent; border-color: #00ff00; color: #00ff00;" onclick="window.location.href='index.html'"><< BACK TO MISSION LOGS</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3>> JOIN_THE_PROTOCOL</h3>
+        <p>System updates aur nayi tech learnings ke liye follow karein.</p>
+        <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
+    </footer>
+
+</body>
+</html>

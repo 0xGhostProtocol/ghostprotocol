@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Protocol | All Mission Logs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Smooth Fade-in - No typing delay */
+        .logs-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Static Hacker Header */
+        .static-header {
+            background: #0a0a0a;
+            border: 1px solid #00ff00;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+        }
+        .static-header h1 {
+            color: #00ff00;
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .static-header p {
+            color: #ccc;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Grid Layout */
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Post Card */
+        .post-card {
+            background-color: #0a0a0a;
+            border: 1px solid #222;
+            border-top: 3px solid #00ff00;
+            padding: 25px;
+            transition: 0.3s;
+            position: relative;
+            cursor: pointer;
+        }
+        .post-card:hover {
+            border-color: #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .post-card .date {
+            color: #555;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .post-card h3 {
+            color: #fff;
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 10px;
+        }
+        .post-card p {
+            color: #aaa;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .read-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: transparent;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .post-card:hover .read-btn {
+            background: #00ff00;
+            color: #000;
+            box-shadow: 0 0 10px #00ff00;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GHOST_PROTOCOL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Roadmap.html">My Roadmap</a></li>
+            <li><a href="tools.html">Free Tools</a></li>
+            <li><a href="posts.html" class="active">Latest Posts</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <div class="logs-container">
+        
+        <div class="static-header">
+            <h1>> ALL_MISSION_LOGS</h1>
+            <p>> SYSTEM DATABASE // FILES DECRYPTED AND READY.</p>
+        </div>
+
+        <div style="text-align: right; margin-bottom: 30px;">
+            <input type="text" placeholder="> SEARCH_LOGS..." style="width: 250px; padding: 10px; background: #0a0a0a; border: 1px solid #00ff00; color: #00ff00; font-family: 'Courier New', monospace;">
+        </div>
+        
+        <div class="post-grid">
+            
+            <div class="post-card" onclick="window.location.href='Post 2.html'">
+                <div class="date">DATE: MAY 2026 | STATUS: DECRYPTED</div>
+                     <h3>Introduction to Ethical Hacking in Hindi</h3>
+                <p>जब भी हम 'हैकिंग' शब्द सुनते हैं, तो हमारे दिमाग में एक ऐसे इंसान की तस्वीर आती है जो डार्क रूम में बैठकर हुडी (Hoodie) पहने ....</p>
+               <span class="read-btn">READ FILE >></span>
+            </div>
+
+            <div class="post-card" onclick="window.location.href='Post 1.html'">
+                <div class="date">DATE: MAY 2026 | STATUS: DECRYPTED</div>
+                <h3>GHOST_PROTOCOL_INITIATED</h3>
+                <p>पॉलिटेक्निक में लगातार 2 बार 'ईयर बैक' और आर्मी की तैयारी से लेकर हैकिंग की दुनिया तक का मेरा सफर...</p>
+                  <span class="read-btn">READ FILE >></span>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer" style="margin-top: 80px;">
+        <h3>> JOIN_THE_PROTOCOL</h3>
+        <p>System updates aur nayi tech learnings ke liye follow karein.</p>
+        <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Protocol | Free Tools & Armory</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tools page specific styling for smooth reveal */
+        #tools-content {
+            display: none;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .tool-category h3 {
+            color: #00ff00;
+            border-bottom: 1px dashed #004400;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .tool-item {
+            margin-bottom: 15px;
+        }
+        .tool-item strong {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+        <div class="logo">GHOST_PROTOCOL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Roadmap.html">My Roadmap</a></li>
+            <li><a href="tools.html" class="active">Free Tools</a></li>
+            <li><a href="Latest Posts.html">Latest Posts</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER / TYPING EFFECT FOR INTRO -->
+    <div class="terminal-container" style="max-width: 900px; margin: 40px auto; padding: 20px;">
+        <div class="code-terminal" style="margin-bottom: 30px; min-height: 150px;">
+            <p id="tools-typing"></p><span class="cursor" id="cursor">_</span>
+        </div>
+    </div>
+
+    <!-- HIDDEN TOOLS CONTENT (Reveals after typing) -->
+    <div id="tools-content">
+        <section class="latest-posts" style="padding-top: 0;">
+            <div class="post-grid">
+                
+                <!-- 1. Operating System -->
+                <div class="post-card tool-category">
+                    <h3>1. ऑपरेटिंग सिस्टम (OS)</h3>
+                    <div class="tool-item">
+                        <strong>> Kali Linux:</strong>
+                        <p>दोस्तों, यह एथिकल हैकिंग के लिए सबसे पॉपुलर OS है। इसमें 600 से ज़्यादा हैकिंग टूल्स पहले से इंस्टॉल आते हैं, इसलिए यह हर हैकर की पहली पसंद होता है।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> Parrot Security OS:</strong>
+                        <p>अगर आपके सिस्टम की रैम थोड़ी कम है, तो यह काली लिनक्स का एक बेहतरीन और हल्का विकल्प है। यह भी हैकर्स और डेवलपर्स के बीच काफी पॉपुलर है।</p>
+                    </div>
+                </div>
+
+                <!-- 2. Network Scanning -->
+                <div class="post-card tool-category">
+                    <h3>2. नेटवर्क स्कैनिंग और एनालिसिस</h3>
+                    <div class="tool-item">
+                        <strong>> Nmap (Network Mapper):</strong>
+                        <p>जब भी हमें किसी नेटवर्क को स्कैन करना होता है या ओपन पोर्ट्स और सर्विसेज़ का पता लगाना होता है, तो Nmap सबसे ज़रूरी टूल बन जाता है।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> Wireshark:</strong>
+                        <p>यह नेटवर्क ट्रैफिक को एनालाइज़ करने और पैकेट्स को कैप्चर करने के लिए दुनिया का सबसे बेहतरीन फ्री टूल है। इससे आप देख सकते हैं कि नेटवर्क पर क्या डेटा सेंड और रिसीव हो रहा है।</p>
+                    </div>
+                </div>
+
+                <!-- 3. Web App Security -->
+                <div class="post-card tool-category">
+                    <h3>3. वेब एप्लीकेशन सिक्योरिटी</h3>
+                    <div class="tool-item">
+                        <strong>> Burp Suite (Community):</strong>
+                        <p>वेबसाइट्स में बग्स ढूँढने और वेब वल्नेरेबिलिटीज़ (जैसे SQLi, XSS) को टेस्ट करने के लिए यह इंडस्ट्री स्टैण्डर्ड टूल है। इसका फ्री वर्ज़न हमारी प्रैक्टिस के लिए एकदम सही है।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> OWASP ZAP:</strong>
+                        <p>यह पूरी तरह से फ्री और ओपन-सोर्स टूल है। अगर आपको वेब एप्लीकेशन्स की ऑटोमेटेड सिक्योरिटी स्कैनिंग करनी है, तो यह बहुत काम आता है।</p>
+                    </div>
+                </div>
+
+                <!-- 4. Vulnerability & Exploitation -->
+                <div class="post-card tool-category">
+                    <h3>4. वल्नेरेबिलिटी और एक्सप्लॉयटेशन</h3>
+                    <div class="tool-item">
+                        <strong>> Metasploit Framework:</strong>
+                        <p>यह मेरा फेवरेट और एक बहुत ही पावरफुल टूल है। इसका इस्तेमाल सिस्टम्स में मौजूद कमज़ोरियों को एक्सप्लॉयट करने और पेलोड्स बनाने के लिए किया जाता है।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> OpenVAS:</strong>
+                        <p>नेटवर्क और सिस्टम्स में कमज़ोरियों को स्कैन करने के लिए यह एक बेहतरीन फ्री वल्नेरेबिलिटी स्कैनर है।</p>
+                    </div>
+                </div>
+
+                <!-- 5. Password Cracking -->
+                <div class="post-card tool-category">
+                    <h3>5. पासवर्ड क्रैकिंग</h3>
+                    <div class="tool-item">
+                        <strong>> John the Ripper:</strong>
+                        <p>यह एक बहुत ही तेज़ और पॉपुलर पासवर्ड क्रैकर है, जो ऑफलाइन पासवर्ड हैश (Hash) को क्रैक करने के काम आता है।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> Hashcat:</strong>
+                        <p>अगर आप पासवर्ड क्रैकिंग की दुनिया में जा रहे हैं, तो जान लीजिए कि इसे दुनिया का सबसे तेज़ पासवर्ड रिकवरी टूल माना जाता है।</p>
+                    </div>
+                </div>
+
+                <!-- 6. Practice Platforms -->
+                <div class="post-card tool-category" style="border-color: #ffbd2e;">
+                    <h3 style="color: #ffbd2e;">6. प्रैक्टिस और लैब्स</h3>
+                    <p style="color: #ccc; margin-bottom: 15px;">टूल्स तो आ गए, लेकिन प्रैक्टिस कहाँ करें? इसके लिए ये फ्री टियर्स बेस्ट हैं:</p>
+                    <div class="tool-item">
+                        <strong>> TryHackMe & HackTheBox:</strong>
+                        <p>इन दोनों प्लेटफॉर्म्स पर अपना फ्री अकाउंट बना लें। यहाँ आप रियल-वर्ल्ड हैकिंग लैब्स की प्रैक्टिस लीगल तरीके से कर सकते हैं।</p>
+                    </div>
+                    <div class="tool-item">
+                        <strong>> PortSwigger Academy:</strong>
+                        <p>वेब सिक्योरिटी सीखने और Burp Suite की प्रैक्टिस करने के लिए यह 100% फ्री और सबसे शानदार जगह है。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PRO TIP & CONCLUSION -->
+        <div class="terminal-container" style="max-width: 900px; margin: 0 auto 50px auto; padding: 30px; text-align: center; border: 1px dashed #00ff00; background: #0a0a0a;">
+            <h3 style="color: #ff0000; text-shadow: 0 0 10px #ff0000; letter-spacing: 2px;">> SYSTEM WARNING // PRO_TIP</h3>
+            <p style="color: #fff; font-size: 1.1rem; margin-bottom: 20px;">मेरी सलाह रहेगी कि इन हैकिंग ऑपरेटिंग सिस्टम्स और टूल्स को सीधा अपने मेन कंप्यूटर पर इंस्टॉल करने के बजाय VirtualBox या VMware का इस्तेमाल करें। वहाँ एक वर्चुअल मशीन (Virtual Machine) बनाएं और सुरक्षित तरीके से अपनी प्रैक्टिस शुरू करें।</p>
+            <p style="color: #00ff00;">तो दोस्तों, ये थे वो फ्री टूल्स जिनसे आप अपनी एथिकल हैकिंग और साइबर सिक्योरिटी की जर्नी आज ही स्टार्ट कर सकते हैं। आप इनमें से कौन सा टूल सबसे पहले सेटअप करने वाले हैं? मुझे नीचे कमेंट्स में ज़रूर बताएं! और हाँ, ऐसे ही टेक और हैकिंग ट्यूटोरियल्स के लिए हमारे ब्लॉग से जुड़े रहें।</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3>> JOIN_THE_PROTOCOL</h3>
+        <p>System updates aur nayi tech learnings ke liye follow karein.</p>
+        <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
+    </footer>
+
+    <!-- JAVASCRIPT FOR TOOLS TYPING EFFECT -->
+    <script>
+        // Intro text
+        const toolsText = "मेरा गोल साइबर सिक्योरिटी में 0 से एक्सपर्ट बनना है। इस सफर में कई लोगों का सबसे बड़ा सवाल ये आता है कि क्या हमें हैकिंग सीखने के लिए महंगे सॉफ्टवेयर खरीदने पड़ेंगे? इसका जवाब है—बिल्कुल नहीं!\n\nइस फील्ड में ओपन-सोर्स (Open-Source) और फ्री टूल्स ही हमारे सबसे अच्छे दोस्त हैं। आज मैं आपके साथ उन बेहतरीन फ्री टूल्स की लिस्ट शेयर कर रहा हूँ, जो आपके 'घोस्ट प्रोटोकॉल' सेटअप के लिए एकदम परफेक्ट रहेंगे:";
+        
+        const toolsTypingElement = document.getElementById("tools-typing");
+        const toolsContentDiv = document.getElementById("tools-content");
+        const cursor = document.getElementById("cursor");
+        let tIndex = 0;
+
+        function typeToolsIntro() {
+            if (!toolsTypingElement) return;
+
+            if (tIndex < toolsText.length) {
+                if (toolsText.charAt(tIndex) === '\n') {
+                    toolsTypingElement.innerHTML += "<br>";
+                } else {
+                    toolsTypingElement.innerHTML += toolsText.charAt(tIndex);
+                }
+                tIndex++;
+                // Typing speed - 25ms rakhi hai taaki jaldi type ho
+                setTimeout(typeToolsIntro, 25); 
+            } else {
+                // Typing khatam hone par Tools reveal karna
+                setTimeout(() => {
+                    cursor.style.display = 'none'; // Cursor hide
+                    toolsContentDiv.style.display = 'block'; // Cards reveal
+                }, 500);
+            }
+        }
+
+        window.onload = function() {
+            typeToolsIntro();
+        };
+    </script>
+
+</body>
+</html>

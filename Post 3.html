@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Log 03: Networking | Ghost Protocol</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-top: 3px solid #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.05);
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .blog-header { text-align: center; margin-bottom: 40px; }
+        .blog-header h1 { color: #00ff00; font-size: 2.5rem; text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); margin-bottom: 10px; }
+        .blog-header .meta-data { color: #555; font-size: 0.9rem; letter-spacing: 2px; border-bottom: 1px dashed #333; padding-bottom: 20px; }
+        .blog-content { color: #ccc; line-height: 1.8; font-size: 1.1rem; }
+        .blog-content h2 { color: #fff; margin-top: 40px; margin-bottom: 15px; border-left: 4px solid #00ff00; padding-left: 15px; font-size: 1.6rem; }
+        .blog-content ul { margin-bottom: 25px; padding-left: 20px; }
+        .blog-content li { margin-bottom: 10px; }
+        .blog-content strong { color: #00ff00; }
+        .blog-image { width: 100%; max-width: 700px; display: block; margin: 30px auto; border: 1px solid #00ff00; border-radius: 5px; box-shadow: 0 0 15px rgba(0, 255, 0, 0.2); }
+        .back-btn { display: inline-block; margin-top: 40px; padding: 10px 20px; background: transparent; color: #00ff00; border: 1px solid #00ff00; text-decoration: none; transition: 0.3s; }
+        .back-btn:hover { background: #00ff00; color: #000; box-shadow: 0 0 10px #00ff00; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GHOST_PROTOCOL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Roadmap.html">My Roadmap</a></li>
+            <li><a href="tools.html">Free Tools</a></li>
+            <li><a href="posts.html" class="active">Latest Posts</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1>> MISSION LOG 03: THE MATRIX OF NETWORKING</h1>
+            <p class="meta-data">DATE: MAY 2026 | AUTHOR: GHOST OPERATOR | STATUS: DECRYPTED</p>
+        </div>
+
+        <div class="blog-content">
+            <img src="network-cover.png" alt="Networking Matrix" class="blog-image">
+
+            <p>हैकिंग की दुनिया में एक बहुत पुरानी कहावत है: <strong>"You cannot hack a network if you don't know how it works."</strong> आज हम इंटरनेट के इस 'मैट्रिक्स' को एकदम बेसिक से डिकोड करेंगे।</p>
+
+            <h2>1. Networking क्या है? (What is Networking?)</h2>
+            <p>एकदम आसान भाषा में: जब दो या दो से ज़्यादा डिवाइस आपस में जुड़कर डेटा, फाइल्स या हार्डवेयर शेयर करते हैं, तो उस जुड़ाव को <strong>नेटवर्क</strong> कहते हैं।</p>
+
+            <h2>2. Networking क्यों ज़रूरी है?</h2>
+            <ul>
+                <li><strong>Data Sharing:</strong> एक क्लिक में दुनिया के किसी भी कोने में फाइल भेजना।</li>
+                <li><strong>Resource Sharing:</strong> ऑफिस में 10 कंप्यूटर हैं, पर प्रिंटर एक ही है। नेटवर्किंग से 10 कंप्यूटर उसी प्रिंटर को यूज़ कर सकते हैं।</li>
+                <li><strong>Hacking Focus:</strong> बिना नेटवर्क के कोई हैकिंग नहीं हो सकती।</li>
+            </ul>
+
+            <h2>3. इतिहास (History of Networking)</h2>
+            <ul>
+                <li><strong>1969 (ARPANET):</strong> अमेरिका की मिलिट्री ने दुनिया का पहला नेटवर्क बनाया था।</li>
+                <li><strong>1983 (TCP/IP):</strong> इंटरनेट को बात करने की एक भाषा मिली।</li>
+                <li><strong>1989 (WWW):</strong> टिम बर्नर्स-ली ने World Wide Web बनाया।</li>
+            </ul>
+
+            <h2>4. नेटवर्क के प्रकार (Types of Network)</h2>
+            <img src="network-types.png" alt="Types of Networks" class="blog-image">
+            <ul>
+                <li><strong>PAN:</strong> 10 मीटर के दायरे में (जैसे: फोन से कनेक्टेड स्मार्टवॉच)।</li>
+                <li><strong>LAN:</strong> बिल्डिंग या घर के अंदर (जैसे: वाई-फाई)।</li>
+                <li><strong>MAN:</strong> शहर को कवर करता है (जैसे: केबल टीवी)।</li>
+                <li><strong>WAN:</strong> दुनिया का सबसे बड़ा नेटवर्क (इंटरनेट खुद एक WAN है)।</li>
+            </ul>
+
+            <h2>5. डेटा ट्रांसफर से जुड़ी ज़रूरी शर्तें</h2>
+            <ul>
+                <li><strong>Bandwidth:</strong> पाइप की मोटाई। (मैक्सिमम कितना डेटा जा सकता है)।</li>
+                <li><strong>Throughput:</strong> असल में कितना डेटा आ रहा है।</li>
+                <li><strong>Latency (Ping):</strong> डेटा को पहुँचने में कितना टाइम लगा।</li>
+                <li><strong>Jitter:</strong> नेटवर्क की स्पीड में अचानक आने वाला उतार-चढ़ाव।</li>
+            </ul>
+
+            <h2>6. Topology (नेटवर्क का डिज़ाइन)</h2>
+            <img src="topology.png" alt="Network Topologies" class="blog-image">
+            <ul>
+                <li><strong>Bus Topology:</strong> एक लंबी मेन केबल से सारे कंप्यूटर जुड़े होते हैं।</li>
+                <li><strong>Ring Topology:</strong> सारे कंप्यूटर गोल रिंग में जुड़े होते हैं।</li>
+                <li><strong>Star Topology:</strong> बीच में एक मेन डिवाइस (Switch) होता है, और सारे कंप्यूटर उससे जुड़े होते हैं। (99% यही यूज़ होती है)।</li>
+                <li><strong>Mesh Topology:</strong> हर कंप्यूटर बाकी सभी से सीधे तार से जुड़ा होता है। दुनिया की सबसे सुरक्षित टोपोलॉजी।</li>
+            </ul>
+
+            <div style="margin-top: 40px; border-top: 1px dashed #333; padding-top: 20px;">
+                <p style="color: #555;">> END OF LOG // STAY TUNED FOR MISSION LOG 04: OSI MODEL.</p>
+            </div>
+        </div>
+
+        <a href="Index.HTML" class="back-btn"><< RETURN TO ARCHIVE</a>
+    </div>
+
+    <footer class="footer">
+        <h3>> JOIN_THE_PROTOCOL</h3>
+        <p>System updates aur nayi tech learnings ke liye follow karein.</p>
+        <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
+    </footer>
+
+</body>
+</html>

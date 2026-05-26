@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- LOADING ANIMATION -->
 <div id="loader">
     <div class="loader-text">
         <p>> INITIALIZING GHOST_PROTOCOL...</p>
@@ -16,7 +15,6 @@
         <div class="progress-bar"><div class="progress"></div></div>
     </div>
 </div>
-    <!-- 1. HEADER / NAVIGATION MENU -->
     <nav class="navbar">
         <div class="logo">GHOST_PROTOCOL</div>
         <ul class="nav-links">
@@ -30,31 +28,26 @@
         </ul>
     </nav>
 
-    <!-- 2. HERO SECTION (Background Photo & Typing Code) -->
     <header class="hero-section">
         <div class="hero-overlay">
             <div class="code-terminal">
                 <p id="typing-text"></p>
                 <span class="cursor" id="cursor">_</span>
             </div>
-            <!-- Yahan se tumhari photo ka code shuru hota hai -->
             <div id="operator-pic-box" style="display: none; text-align: center; margin-top: 30px;">
                 <img src="Ghost001.jpeg" id="my-pic" class="flash-mode" alt="Ghost Protocol Operator">
             </div>
         </div>
     </header>
 
-    <!-- 3. LATEST POSTS SECTION (Aaj Kya Seekha) -->
     <section class="latest-posts">
         <h2>> MISSION_LOGS // LATEST_ENTRIES</h2>
         <div class="post-grid">
-           <!-- Post 1 -->
-            <div class="post-card" onclick="window.location.href='Post 1.html'">
+           <div class="post-card" onclick="window.location.href='Post 1.html'">
                 <h3>GHOST_PROTOCOL_INITIATED</h3>
                 <p>पॉलिटेक्निक में लगातार 2 बार 'ईयर बैक' और आर्मी की तैयारी से लेकर हैकिंग की दुनिया तक का मेरा सफर...</p>
                 <span class="read-btn">Access File >></span>
             </div>
-            <!-- Post 2 -->
             <div class="post-card" onclick="window.location.href='post 2.html'">
                 <h3>Introduction to Ethical Hacking in Hindi</h3>
                 <p>जब भी हम 'हैकिंग' शब्द सुनते हैं, तो हमारे दिमाग में एक ऐसे इंसान की तस्वीर आती है जो डार्क रूम में बैठकर हुडी (Hoodie) पहने ....</p>
@@ -68,74 +61,31 @@
 </div>
     </section>
 
-    <!-- SYSTEM ADVERTISEMENT SPACE -->
+<div class="terminal-box">
+    <div id="terminal-output">
+        <p>GHOST_OS v1.0.1 initialized.</p>
+        <p>Type <strong>'help'</strong> to see available commands.</p>
+    </div>
+    <div class="terminal-input-line">
+        <span class="prompt-text">root@ghost:~#</span>
+        <input type="text" id="terminal-input" autocomplete="off" autofocus>
+    </div>
+</div>
+
     <div class="ad-container">
         <div class="ad-text">[ SYSTEM_ADVERTISEMENT_SPACE ]</div>
         <div class="ad-subtext">> AD_SCRIPT_WILL_BE_INJECTED_HERE_LATER</div>
     </div>
 
-    <!-- 4. FOOTER / FOLLOW SECTION -->
     <footer class="footer">
         <h3>> JOIN_THE_PROTOCOL</h3>
         <p>System updates aur nayi tech learnings ke liye follow karein.</p>
         <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
     </footer>
 
-    <!-- Floating Follow Button -->
     <button class="floating-follow" onclick="window.location.href='subscribe.html'">+ FOLLOW_SYSTEM</button>
 
-    <!-- ======================================================= -->
-    <!-- ASLI JAVASCRIPT YAHAN HAI (Typing + Photo Flash Effect) -->
-    <!-- ======================================================= -->
-    <script>
-        const textToType = "> SYSTEM INITIALIZATION...\n> BYPASSING FIREWALLS...\n> ACCESS GRANTED.\n> WELCOME OPERATOR GHOST.";
-        const typingElement = document.getElementById("typing-text");
-        let i = 0;
+    <script src="script.js"></script>
 
-        // 1. Typing Function
-        function typeWriter() {
-            if (i < textToType.length) {
-                if (textToType.charAt(i) === '\n') {
-                    typingElement.innerHTML += "<br>";
-                } else {
-                    typingElement.innerHTML += textToType.charAt(i);
-                }
-                i++;
-                setTimeout(typeWriter, 50); // Speed of typing
-            } else {
-                // Typing khatam hone ke 1 second baad flash effect chalu hoga
-                setTimeout(startFlashEffect, 1000); 
-            }
-        }
-
-        // 2. Flash Image Function
-        function startFlashEffect() {
-            const picBox = document.getElementById('operator-pic-box');
-            const myPic = document.getElementById('my-pic');
-
-            // Photo dikhana shuru karo
-            picBox.style.display = 'block';
-
-            // 2 second ke baad flash band karke photo ko fix kar do
-            setTimeout(function() {
-                myPic.className = 'fixed-mode';
-            }, 2000); 
-        }
-
-        // 3. Jaise hi page load ho, typing shuru ho jaye
-        window.onload = function() {
-            typeWriter();
-        };
-    </script>
-<script>
-    window.addEventListener("load", function() {
-        setTimeout(function() {
-            document.getElementById("loader").style.opacity = "0";
-            setTimeout(function() {
-                document.getElementById("loader").style.display = "none";
-            }, 500);
-        }, 1500); // 3 सेकंड का लोडर टाइम
-    });
-</script>
 </body>
 </html>

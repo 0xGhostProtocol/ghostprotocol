@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Protocol | Mission Log 03</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Fade-in Animation so it loads smoothly */
+        .post-container {
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Post Header */
+        .post-header {
+            background-color: #0a0a0a;
+            border: 1px solid #00ff00;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+        }
+        .post-header h1 {
+            color: #00ff00;
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .post-meta {
+            color: #777;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .post-meta span { color: #fff; }
+
+        /* Topic Blocks (Hacker Module Style) */
+        .log-block {
+            background-color: #0a0a0a;
+            border-left: 4px solid #00ff00;
+            border-right: 1px solid #222;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .log-block:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.05);
+            border-right: 1px solid #004400;
+        }
+        
+        /* Hacker Badge on each block */
+        .log-block::before {
+            content: '[SYSTEM_LOG_EXTRACTED]';
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #050505;
+            color: #00ff00;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border: 1px solid #00ff00;
+            letter-spacing: 1px;
+        }
+
+        .log-block h2 {
+            color: #fff;
+            margin-top: 0;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .log-block p {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .log-block ul {
+            color: #ccc;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .log-block li { margin-bottom: 10px; }
+        .log-block strong { color: #00ff00; }
+        
+        .intro-text {
+            text-align: center;
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GHOST_PROTOCOL</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Roadmap.html">My Roadmap</a></li>
+            <li><a href="Free Tools.html">Free Tools</a></li>
+            <li><a href="Latest Posts.html" class="active" style="color: #00ff00; border-bottom: 1px solid #00ff00; text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);">Latest Posts</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <div class="post-container">
+        
+        <div class="post-header">
+            <h1>>  The Networking Roadmap (Level 1 to 7)</h1>
+            <div class="post-meta">
+                <div>AUTHOR: <span>Prashant (Ghost)</span></div>
+                <div>DATE: <span>June 2026</span></div>
+                <div>STATUS: <span style="color:#00ff00;">DECRYPTED</span></div>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <p>नमस्ते दोस्तों! मैं प्रशांत (Ghost) एक बार फिर हाज़िर हूँ।</p>
+            <p>जैसा कि हम सभी जानते हैं कि <strong>"Networking के बिना हैकिंग एक अंधे तीर की तरह है।"</strong> बिना यह समझे कि डेटा इंटरनेट पर कैसे काम करता है, हम एक असली हैकर कभी नहीं बन सकते। इसलिए, आज मैं अपना वह पूरा मास्टर प्लान शेयर कर रहा हूँ, जिसे मैं अपनी नेटवर्किंग मजबूत करने के लिए फॉलो करने वाला हूँ। यह रहा मेरा पूरा 7 लेवल का रोडमैप!</p>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 1: Core Fundamentals (Neev)</h2>
+            <p>Network ke basic mechanics ko samajhna sabse pehla step hai.</p>
+            <ul>
+                <li><strong>Packets:</strong> Data internet par travel kaise karta hai.</li>
+                <li><strong>TCP vs UDP & 3-Way Handshake:</strong> Connection kaise banta hai (Nmap scanning samajhne ke liye sabse zaroori).</li>
+                <li><strong>IP & MAC Addresses:</strong> Public vs Private IPs, aur routing ka basic concept.</li>
+                <li><strong>DNS Resolution Process:</strong> Jab tum browser mein URL type karte ho, toh background mein IP kaise resolve hota hai.</li>
+                <li><strong>OSI Model:</strong> Sirf practical approach se (Kaun sa attack/protocol kis layer par kaam karta hai).</li>
+            </ul>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 2: The Hacker's Language (Ports & Protocols)</h2>
+            <p>Sirf HTTP kaafi nahi, real pentests mein in sabka saamna hoga.</p>
+            <ul>
+                <li><strong>Web & Files:</strong> HTTP/HTTPS (80/443), FTP (21).</li>
+                <li><strong>Remote Access:</strong> SSH (22), RDP (3389).</li>
+                <li><strong>Network & Mail:</strong> DNS (53), DHCP (67/68), SMTP (25).</li>
+                <li><strong>Windows Ecosystem:</strong> SMB (445) (Ransomware aur Windows exploitation yahan sabse zyada hote hain).</li>
+            </ul>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 3: Linux Networking (Hacker's Terminal)</h2>
+            <p>Graphical interface (GUI) chhod kar terminal ka master banna.</p>
+            <ul>
+                <li><strong>Basic Commands:</strong> ip, ifconfig, route.</li>
+                <li><strong>Connection Tracking:</strong> ss, netstat.</li>
+                <li><strong>Packet Capture:</strong> tcpdump.</li>
+                <li><strong>Web Requests:</strong> curl, wget.</li>
+            </ul>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 4: Network Security & Wireless Basics</h2>
+            <p>Pehle samjho ki system bacha kaise raha hai, phir attack plan karo.</p>
+            <ul>
+                <li><strong>Defense Systems:</strong> Firewalls, IDS/IPS (Intrusion Detection/Prevention Systems), aur VLANs kaise kaam karte hain.</li>
+                <li><strong>Wireless Security:</strong> Wi-Fi ke basics, Access Points, WPA2/WPA3 protocols, aur Handshake capture ka concept.</li>
+            </ul>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 5: Scanning & Interception (Practical Labs)</h2>
+            <p>Tumhara favorite hands-on section jahan asli hacking shuru hoti hai.</p>
+            <ul>
+                <li><strong>Nmap:</strong> Network mein live systems, open ports, aur services scan karna.</li>
+                <li><strong>Wireshark:</strong> Network traffic ko capture aur analyze karna.</li>
+                <li><strong>Burp Suite (Web Networking):</strong> Web traffic ko rokna (intercept) aur modify karna.</li>
+            </ul>
+        </div>
+
+        <div class="log-block">
+            <h2>> Section 6: Network Attacks & Defense (Ethical Execution)</h2>
+            <p>Attacks ko samajhna, par ek safe environment (Virtual Labs) mein.</p>
+            <ul>
+                <li><strong>Core Attacks:</strong> ARP Spoofing, MITM, DoS/DDoS.</li>
+                <li><strong>The Ethical Approach:</strong> Ye attacks kaise hote hain, inko detect kaise kiya jata hai, aur inki prevention (bachav) kya hai.</li>
+            </ul>
+        </div>
+
+        <div class="log-block" style="border-left-color: #ffaa00;">
+            <h2 style="color: #ffaa00;">> Section 7: Anonymity (Ghost Mode)</h2>
+            <p>Apne tracks chhupana aur privacy maintain karna ek ethical hacker ke liye bahut zaroori hai.</p>
+            <ul>
+                <li><strong>Techniques:</strong> VPN Architecture, Proxies, aur Tor Network ka istemaal aur unki working.</li>
+            </ul>
+        </div>
+
+        <div class="intro-text" style="margin-top: 40px;">
+            <p>यह है वो पूरा रोडमैप जिसे मैं आने वाले कुछ हफ्तों में बारीकी से डिकोड करूँगा। हम हर एक ब्लॉक को उठाएंगे और उस पर डीप-डाइव करेंगे।</p>
+            <h2 style="color: #00ff00; text-shadow: 0 0 10px #00ff00; margin-top: 20px;">> GHOST_PROTOCOL // STANDING BY...</h2>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <button class="follow-btn" style="background-color: transparent; border-color: #00ff00; color: #00ff00;" onclick="window.location.href='index.html'"><< BACK TO MISSION LOGS</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <h3>> JOIN_THE_PROTOCOL</h3>
+        <p>System updates aur nayi tech learnings ke liye follow karein.</p>
+        <button class="follow-btn" onclick="window.location.href='subscribe.html'">FOLLOW SYSTEM</button>
+    </footer>
+
+</body>
+</html>
